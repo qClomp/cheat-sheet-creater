@@ -28,7 +28,7 @@ export default function PageCheatSheet() {
     
     const getData = () => {
         
-        const geturl = "https://localhost:7034/Sheet/"+ sheeturl
+        const geturl = "https://cheatsheetcreator.azurewebsites.net/Sheet/"+ sheeturl
 
         axios.get(geturl)
             .then(response => {

@@ -53,7 +53,7 @@ export default function PageMain() {
             sheetData: cleanedSheets
         }
 
-        axios.post('https://localhost:7034/Sheet/', Sheet)
+        axios.post('https://cheatsheetcreator.azurewebsites.net/Sheet/', Sheet)
             .then(response => {
                 let url = "http://localhost:3000/" + response.data.url.toString()
                 setGeneratedURL(url)
