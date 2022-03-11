@@ -1,5 +1,5 @@
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 // Styles
 import { Ssheet, 
@@ -9,7 +9,7 @@ import { Ssheet,
     Sdelete,
 } from "../styles/StyledSheet"
 
-import thrashicon from "../src/public/thrash.svg"
+import thrashicon from "../public/thrash.svg"
 
 interface Isheet {
     id: number,

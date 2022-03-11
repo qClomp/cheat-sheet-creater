@@ -1,6 +1,4 @@
 
-import { useRef } from "react"
-
 // Components
 import Sheet from "./Sheet"
 
