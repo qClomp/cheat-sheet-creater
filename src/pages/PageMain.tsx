@@ -55,10 +55,10 @@ export default function PageMain() {
 
         axios.post('https://cheatsheetcreator.azurewebsites.net/Sheet/', Sheet)
             .then(response => {
-                let url = "http://localhost:3000/" + response.data.url.toString()
+                let url = "https://cheatsheetcreater.vercel.app/" + response.data.url.toString()
                 setGeneratedURL(url)
             })
-            .catch(error => setError("Connection failed."))
+            .catch(error => setError("Connection Failed!"))
     }
 
     return(
