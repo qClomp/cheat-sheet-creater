@@ -53,7 +53,7 @@ export default function PageMain() {
             sheetData: cleanedSheets
         }
 
-        axios.post('https://cheatsheetcreator.azurewebsites.net/Sheet/', Sheet)
+        axios.post('https://cheatsheetcreaterapi.azurewebsites.net/Sheet/', Sheet)
             .then(response => {
                 let url = "https://cheatsheetcreater.vercel.app/" + response.data.url.toString()
                 setGeneratedURL(url)
